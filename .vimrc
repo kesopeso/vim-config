@@ -67,6 +67,7 @@ nmap <C-N> :tabnew<cr>
 nmap <C-C> :tabclose<cr>
 nmap <Leader>f :tag<space>
 nmap gtd <C-]>
+xmap <Leader>p "_dP
 
 
 
