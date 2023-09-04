@@ -40,7 +40,7 @@ nmap <C-H> <C-W><C-H>
 " move to right split
 nmap <C-L> <C-W><C-L>
 " make split take whole area
-nmap <C-M> <C-W>\|
+nmap <C-M> <C-W>\|<C-W>_
 " make equal splits
 nmap <C-E> <C-W>=
 " open new vertical split below current one
