@@ -113,9 +113,15 @@ let g:grep_cmd_opts = '--line-numbers --noheading'
 
 
 "--------Auto-Commands-------"
-augroup autosourcing
+augroup autosourcing                                    " Automatically source the .vimrc file on save
     autocmd!
-    autocmd BufWritePost .vimrc source %                " Automatically source the .vimrc file on save
+    autocmd BufWritePost .vimrc source %
+augroup END
+
+augroup numbertoggle                                    " Switch between absolute and relative line numbering
+    autocmd!
+    autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set number relativenumber   | endif
+    autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set number norelativenumber | endif
 augroup END
 
 
