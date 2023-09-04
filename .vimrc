@@ -8,7 +8,7 @@ set shiftwidth=4                                        " When indenting with '>
 set expandtab                                           " On pressing tab, insert 4 spaces
 set backspace=indent,eol,start                          " Make backspace behave like every other editor
 let mapleader=','                                       " The default leader is \, but a comma is much better
-set number                                              " Activate line numbers
+set relativenumber                                      " Activate line numbers
 set linespace=15                                        " Macvim specific line height, in terminal vim you need to adjust terminal linespacing
 set showtabline=2                                       " Always show tabs
 
