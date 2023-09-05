@@ -121,8 +121,8 @@ augroup END
 
 augroup numbertoggle                                    " Switch between absolute and relative line numbering
     autocmd!
-    autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set number relativenumber   | endif
-    autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set number norelativenumber | endif
+    autocmd BufEnter,FocusGained,WinEnter * if &nu && mode() != "i" | set number relativenumber   | endif
+    autocmd BufLeave,FocusLost,WinLeave   * if &nu                  | set number norelativenumber | endif
 augroup END
 
 
